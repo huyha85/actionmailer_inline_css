@@ -36,7 +36,7 @@ module ActionMailer
 
           message.content_type 'multipart/mixed' if ! existing_attachments.empty?
 
-          existing_attachments.each {|a| message.body << a }
+          # existing_attachments.each {|a| message.body << a }
         end
 
         message
